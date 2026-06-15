@@ -37,10 +37,10 @@
     position: relative;
 }
 .clock span::after{
-    font-size: 0.8rem;
+    font-size: 1rem;
     position: absolute;
     bottom: -5px;
-    left: 50%;
+    left: 57%;
     transform: translateX(-50%);
 }
 #hrs::after{
@@ -52,4 +52,50 @@
 #sec::after{
     content: "SEC";
 }
-
+@media (max-width: 810px){
+    .container{
+        width: 38rem;
+    }
+    .clock span{
+        font-size: 4.2rem;
+    }
+    .clock span::after{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 640px){
+    .container{
+        width: 30rem;
+    }
+    .clock span{
+        font-size: 3.2rem;
+    }
+    .clock span::after{
+        font-size: 0.9rem;
+        bottom: -12px;
+    }
+}
+@media (max-width: 490px){
+    .container{
+        width: 26rem;
+    }
+    .clock span{
+        font-size: 3.2rem;
+    }
+    .clock span::after{
+        font-size: 0.9rem;
+        bottom: -12px;
+    }
+}
+@media (max-width: 430px){
+    .container{
+        width: 22rem;
+        height: 10.2rem;
+    }
+    .clock span{
+        font-size: 2.8rem;
+    }
+    .clock span::after{
+        font-size: 0.8rem;
+    }
+}
